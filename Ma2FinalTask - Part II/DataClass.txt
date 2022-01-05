@@ -1,0 +1,70 @@
+package Ma2FinalTaskPart_2;
+
+//Child Class
+public class DataClass extends MethodClass{
+	private double h;
+	private double k;
+	private int choice;
+	
+	//setters
+	public void choice(int choice) {
+		this.choice = choice;
+	}
+	
+	public void setValue1(double h) {
+		this.h = h;
+	}
+	
+	public void setValue2(double j) {
+		this.k = k;
+	}
+	
+	
+	//print Data using child class method
+	public void printAnswer() {
+		if(this.choice == 0) {
+			System.out.println("Program Terminated");
+		} else if(this.choice == 1) {
+			System.out.println("The Area of Triangle is : " + triangleArea(h, k));
+		} else if(this.choice == 2) {
+			System.out.println("The Area of Triangle is : " + rectangleArea(h, k));
+		} else if(this.choice == 3) {
+			System.out.println("The Area of Triangle is : " + parrallelogramArea(h, k));
+		} else if(this.choice == 4) {
+			System.out.println("The Area of Triangle is : " + circleArea(h));
+		} else {
+			System.out.println("Error!");
+		}
+		System.out.println("------------------------------------------------------------------\n");
+	}
+	
+	//getters
+	public double firstValue() {
+		return this.h;
+	}
+	
+	public double SecondValue() {
+		return this.k;
+	}
+	
+	public int getChoiceValue() {
+		return this.choice;
+	}
+	
+	//getters of method
+	public double getTriangleArea() {
+		return triangleArea(h, k);
+	}
+	
+	public double getRectangleArea() {
+		return rectangleArea(h, k);
+	}
+	
+	public double getParrallelogramArea() {
+		return parrallelogramArea(h, k);
+	}
+	
+	public double getCircleArea() {
+		return circleArea(h);
+	}
+}

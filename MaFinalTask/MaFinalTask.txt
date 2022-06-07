@@ -1,0 +1,12 @@
+package MaFinalTask;
+
+public class FinalTask {
+	public static void main(String[] args) {
+		
+		int revolution = 3000, perSecond, degree;
+		
+		perSecond = revolution / 60;
+		degree = perSecond * 360;
+		System.out.println("Degree = " + degree);
+	}
+}
